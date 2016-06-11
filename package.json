@@ -1,0 +1,25 @@
+{
+  "name": "react-startup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 8081",
+    "prod": "webpack -p"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.8.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "html-webpack-plugin": "^2.17.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
