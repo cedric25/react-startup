@@ -6,7 +6,7 @@ https://nodejs.org/en/
 
 ## Clone this repo
 
-> git clone https://github.com/cedric25/react-startup.git
+> git clone https://github.com/cedric25/react-startup.git  
 > npm install
 
 ## Install webpack globally
