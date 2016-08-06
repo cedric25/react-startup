@@ -7,11 +7,10 @@ var ConfirmBattleContainer = React.createClass({
     router: React.PropTypes.object.isRequired
   },
   getInitialState: function() {
-    // console.log('getInitialState');
     return {
       isLoading: true,
       playersInfo: []
-    }
+    };
   },
 
   // Run before the render()
@@ -31,7 +30,7 @@ var ConfirmBattleContainer = React.createClass({
           playersInfo: [
             players[0], players[1]
           ]
-        })
+        });
       }.bind(this));
   },
 
@@ -59,7 +58,7 @@ var ConfirmBattleContainer = React.createClass({
         playersInfo={this.state.playersInfo}
         onInitiateBattle={this.handleInitiateBattle}
       />
-    )
+    );
   }
 });
 

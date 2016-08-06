@@ -33,7 +33,7 @@ function ConfirmBattle(props) {
             </Link>
           </div>
         </div>
-      </div>
+      </div>;
 }
 
 ConfirmBattle.propTypes = {

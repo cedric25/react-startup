@@ -27,13 +27,13 @@ var Loading = React.createClass({
     return {
       text: 'Loading',
       speed: 300
-    }
+    };
   },
   getInitialState: function () {
     this.originalText = this.props.text;
     return {
       text: this.originalText
-    }
+    };
   },
   componentDidMount: function () {
     var stopper = this.originalText + '...';
@@ -41,11 +41,11 @@ var Loading = React.createClass({
       if (this.state.text === stopper) {
         this.setState({
           text: this.originalText
-        })
+        });
       } else {
         this.setState({
           text: this.state.text + '.'
-        })
+        });
       }
     }.bind(this), this.props.speed);
   },
@@ -57,7 +57,7 @@ var Loading = React.createClass({
       <div style={styles.container}>
         <p style={styles.content}>{this.state.text}</p>
       </div>
-    )
+    );
   }
 });
 

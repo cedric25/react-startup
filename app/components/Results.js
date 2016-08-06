@@ -23,7 +23,7 @@ function Results(props) {
   if (props.isLoading === true) {
     return (
       <Loading />
-    )
+    );
   }
 
   // Tie
@@ -57,7 +57,7 @@ function Results(props) {
       </div>
       <StartOver />
     </div>
-  )
+  );
 }
 
 Results.propTypes = {

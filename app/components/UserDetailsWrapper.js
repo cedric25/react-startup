@@ -7,7 +7,7 @@ function UserDetailsWrapper(props) {
       <p className='lead'>{props.header}</p>
       {props.children}
     </div>
-  )
+  );
 }
 
 UserDetailsWrapper.propTypes = {

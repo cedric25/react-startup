@@ -5,11 +5,11 @@ var sec = "YOUR_SECRET_ID";
 var param = "?client_id=" + id + "&client_secret" + sec;
 
 function getUserInfo (username) {
-  return axios.get('https://api.github.com/users/' + username + param)
+  return axios.get('https://api.github.com/users/' + username + param);
 }
 
 function getRepos (username) {
-  return axios.get('https://api.github.com/users/' + username + '/repos' + param + '@per_page=100')
+  return axios.get('https://api.github.com/users/' + username + '/repos' + param + '@per_page=100');
 }
 
 function getTotalStars (repos) {
@@ -25,15 +25,15 @@ function getPlayersData (player) {
       return {
         followers: player.followers,
         totalStars: totalStars
-      }
-    })
+      };
+    });
 }
 
 function calculateScores (players) {
   return [
     players[0].followers * 3 + players[0].totalStars,
     players[1].followers * 3 + players[1].totalStars
-  ]
+  ];
 }
 
 var helpers = {
@@ -60,7 +60,7 @@ var helpers = {
       .then(calculateScores)
       .catch(function (err) {
         console.warn('Error in battle', err);
-      })
+      });
   }
 };
 

@@ -15,7 +15,7 @@ var ResultsContainer = React.createClass({
         this.setState({
           scores: scores,
           isLoading: false
-        })
+        });
       }.bind(this));
   },
   render: function() {
@@ -25,7 +25,7 @@ var ResultsContainer = React.createClass({
         playersInfo={this.props.location.state.playersInfo}
         scores={this.state.scores}
       />
-    )
+    );
   }
 });
 
